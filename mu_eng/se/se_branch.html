@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Year</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<style>
+.nav-contain{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    background: white;
+}
+.nav-contain h3{
+    padding: 9px 0px;
+}
+.main-container {
+    /* position: absolute; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+    }
+    .sem h1,
+    .syllabus h1 {
+        font-size: 20px;
+    }
+
+    .sem,
+    .syllabus {
+        background: linear-gradient(150deg,rgb(243, 180, 180), rgb(247, 226, 191));
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        margin: 18px 55px;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 5px 15px;
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+
+   .sem-content a {
+        width: 100%;
+        height: 30px;
+        background: lightgray;
+        margin: 5px 0px;
+        border-radius: 3px;
+        color: black;
+        text-decoration: none;
+        transition: .1s;
+        font-size: 16px;
+        background: gray;
+        color: white;
+
+    }
+    .sem-content a:hover{
+       background: lightgray;
+        color: black;
+    }
+
+    .sem-content {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .first {
+        margin-top: 70px;
+    }
+    .back {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .back button {
+        margin: 0px 30px;
+        padding: 5px 25px;
+    }
+</style>
+
+<body>
+
+    <!--navbar part start here-->
+
+    <div class="nav-contain">
+        <h3>Second Year</h3>
+    </div>
+
+    <!--navbar part ends here-->
+
+    <div class="main-container">
+        <div class="sem first">
+            <h1>Select Your Branch</h1>
+            <div class="sem-content">
+                <a href="se_civil.html">Civil Engineering</a>
+                <a href="se_comp.html">Computer Engineering</a>
+                <a href="se_electrical.html">Electrical Engineering</a>
+                <a href="se_extc.html">Extc Engineering</a>
+                <a href="se_it.html">IT Engineering</a>
+                <a href="se_mech.html">Mechanical Engineering</a>
+            </div>
+        </div>
+        <div class="back">
+            <a href="../fe/fe.html"><button type="button" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back</button></a>
+            <a href="../te/te_branch.html"><button type="button" class="btn btn-success">Next <i class="fas fa-arrow-right"></i></button></a>
+        </div>
+    </div>
+</body>
+
+</html>
